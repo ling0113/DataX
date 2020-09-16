@@ -1,0 +1,36 @@
+{
+  "job": {
+    "content": [
+      {
+        "reader": {
+          "name": "streamreader",
+          "parameter": {
+            "column": [
+              {
+                "type":"string",
+                "value":"xiaokang-微信公众号:小康新鲜事儿"
+              },
+              {
+                "type":"string",
+                "value":"你好，世界-DataX"
+              }
+            ],
+            "sliceRecordCount": "10"
+          }
+        },
+        "writer": {
+          "name": "streamwriter",
+          "parameter": {
+            "encoding": "utf-8",
+            "print": true
+          }
+        }
+      }
+    ],
+    "setting": {
+      "speed": {
+        "channel": "2"
+      }
+    }
+  }
+}
